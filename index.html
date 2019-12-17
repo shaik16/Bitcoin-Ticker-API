@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto Ticker</title>
+    <style>
+        body{
+            background: #dff6f0;
+            margin: 17rem;
+        }
+        input{
+            background-color: #4d80e4;
+            border-style: none;
+            width: 4.9rem;
+            height: 1.5rem;
+        }
+        option{
+            background-color: #46b3e6;
+        }
+    </style>
+</head>
+<body>
+   <center>
+   <h1>Bitcoin ticker</h1>
+    <form action="/" method="post">
+        <select name="crypto" >
+            <option value="BTC">Bitcoin</option>
+            <option value="ETH">Etherium</option>
+            <option value="LTC">Litecoin</option>
+        </select>
+        <br><br>
+        <select name="Fiat" >
+            <option value="USD">US Dollar</option>
+            <option value="GBP">GB Pound</option>
+            <option value="EUR">Euros</option>
+        </select>
+        <br><br>
+        <input type="submit" value="check" name="check">
+    </form>   
+   </center>
+    
+</body>
+</html>
