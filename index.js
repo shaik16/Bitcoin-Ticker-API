@@ -13,7 +13,7 @@ app.get("https://shaik16.github.io/Bitcoin-Ticker-API/",function(req,res){
     res.sendFile(__dirname+"/index.html")
 })
 
-app.post("https://shaik16.github.io/Bitcoin-Ticker-API/",function(req,res){
+app.post("/",function(req,res){
     var crypt=req.body.crypto;
     var fit=req.body.fit;
     var baseUrl="https://apiv2.bitcoinaverage.com/indices/global/ticker/";
