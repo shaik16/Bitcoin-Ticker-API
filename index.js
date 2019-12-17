@@ -9,7 +9,7 @@ app.listen(3000,function(){
 console.log("server started on thr port 3000")
 })
 
-app.get("https://shaik16.github.io/Bitcoin-Ticker-API/",function(req,res){
+app.get("/",function(req,res){
     res.sendFile(__dirname+"/index.html")
 })
 
