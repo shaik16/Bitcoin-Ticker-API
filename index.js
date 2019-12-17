@@ -9,11 +9,11 @@ app.listen(3000,function(){
 console.log("server started on thr port 3000")
 })
 
-app.get("/",function(req,res){
+app.get("https://shaik16.github.io/Bitcoin-Ticker-API/",function(req,res){
     res.sendFile(__dirname+"/index.html")
 })
 
-app.post("/",function(req,res){
+app.post("https://shaik16.github.io/Bitcoin-Ticker-API/",function(req,res){
     var crypt=req.body.crypto;
     var fit=req.body.fit;
     var baseUrl="https://apiv2.bitcoinaverage.com/indices/global/ticker/";
