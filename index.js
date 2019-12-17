@@ -14,9 +14,13 @@ app.get("/",function(req,res){
 })
 
 app.post("/",function(req,res){
-    request("https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCUSD",function(error,response,body){
+    var crypt=req.body.crypto;
+    var fit=req.body.fit;
+    var baseUrl="https://apiv2.bitcoinaverage.com/indices/global/ticker/";
+    var finalUrl=baseUrl+crypt+fit;
+    request(finalUrl,function(error,response,body){
         var data=JSON.parse(body);
         var price=data.last;
-        res.send("<h1>the current price of btc is "+price+" USD</h1>") 
+        res.send("<h1>the current price of "+crypt+" is "+price+" "+fit+" </h1>") 
     })
 })
